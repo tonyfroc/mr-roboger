@@ -10,10 +10,10 @@ function beepBoop(num) {
     else if (numArray.includes(2)) {
       numArray[i] = `Boop`
     }
-    else if (numArray.includes(1))
+    else if (numArray.toString().includes(1))
       numArray[i] = 'Beep'
     }
     return numArray
 }
 
-console.log(beepBoop(5));
+console.log(beepBoop(10));
