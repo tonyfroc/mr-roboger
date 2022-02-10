@@ -27,6 +27,12 @@ Test: "It should return an array of numbers from 0 to the user's inputted number
 Code: beepBoop(5);
 Expected Output: [0, 1, 2, 3, 4, 5]
 
+Test: "If a number input by the user contains `1`, all digits are replaced with "Beep!""
+Code: beepBoop(5);
+Expected Output: [0, 'Beep', 2, 3, 4, 5]
+
+
+
 ## Setup/Installation Requirements
 
 - Download git

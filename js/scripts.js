@@ -3,9 +3,12 @@
 function beepBoop(num) {
   let numArray = [];
   for (let i = 0; i <= num; i++) {
-    numArray.push(i)
-  }
-  return numArray
-  }
+    numArray.push(i);
+    if (numArray.includes(1))
+      numArray[i] = 'Beep'
+    }
+    return numArray
+}
 
 console.log(beepBoop(5));
+
