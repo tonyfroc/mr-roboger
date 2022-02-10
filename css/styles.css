@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  color: #FFFFFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  background-color: black;
+  color: red;
+}
+
+h4 {
+  padding: 50px;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+}
+
+.container {
+  border: 5px solid red;
+  padding: 100px;
+  color: white;
+}
+
+.form-group {
+  text-align: center; 
+}
+
+.button {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.btn-secondary {
+  color: red;
+  padding: 10px;
+}
