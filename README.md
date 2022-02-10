@@ -35,6 +35,9 @@ Test: "If a number input by the user contains `2`, all digits are replaced with 
 Code: beepBoop(5);
 Expected Output: [0, 'Beep', 'Boop', 3, 4, 5]
 
+Test: "If a number input by the user contains `3`, all digits are replaced with "Won't you be my neighbor?""
+Code: beepBoop(5);
+Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5]
 
 ## Setup/Installation Requirements
 
