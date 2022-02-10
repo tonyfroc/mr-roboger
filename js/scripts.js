@@ -1,12 +1,14 @@
 // User Interface Logic 
 
 $(document).ready(function(){
-  $("button").click(function(){
+  $("button").click(function(event){
+    event.preventDefault();
     const numInputStr = $('#enter-num').val();
     const inputToNum = parseInt(numInputStr);
     const robotStr = beepBoop(inputToNum)
     $("#robot-response").text(robotStr);
     $("form")[0].reset();
+    event.preventDefault();
   });
 });
 
@@ -27,3 +29,5 @@ function beepBoop(num) {
     }
     return numArray.toString()
 }
+
+// Add Logic to not accept a number higher than 100 
