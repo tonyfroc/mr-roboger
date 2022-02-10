@@ -39,10 +39,13 @@ Test: "If a number input by the user contains `3`, all digits are replaced with 
 Code: beepBoop(5);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5]
 
-Test: "If a number input by the user contains multiple instances of the number `1`, all digits are replaced with "Won't you be my neighbor?""
+Test: "If a number input by the user contains multiple instances of the number `1`, all digits are replaced with "Beep"".
 Code: beepBoop(10);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep']
 
+Test: "If a number input by the user contains multiple instances of the number `2`, all digits are replaced with "Boop".
+Code: beepBoop(12);
+Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
 
 ## Setup/Installation Requirements
 

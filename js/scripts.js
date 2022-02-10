@@ -7,7 +7,7 @@ function beepBoop(num) {
     if (numArray.includes(3)) {
       numArray[i] = `Won't you be my neighbor?`
     }
-    else if (numArray.includes(2)) {
+    else if (numArray.toString().includes(2)) {
       numArray[i] = `Boop`
     }
     else if (numArray.toString().includes(1))
@@ -16,4 +16,4 @@ function beepBoop(num) {
     return numArray
 }
 
-console.log(beepBoop(10));
+console.log(beepBoop(12));
