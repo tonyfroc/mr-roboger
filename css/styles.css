@@ -25,6 +25,10 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  text-align: center; 
+}
+
 input {
   background-color: white;
 }
@@ -33,10 +37,6 @@ input {
   border: 5px solid red;
   padding: 100px;
   color: white;
-}
-
-.form-group {
-  text-align: center; 
 }
 
 .button {
@@ -48,4 +48,8 @@ input {
 .btn-secondary {
   color: red;
   padding: 10px;
+}
+
+#enter-number{
+  text-align:center; 
 }

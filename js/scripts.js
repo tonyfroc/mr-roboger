@@ -1,3 +1,15 @@
+// User Interface Logic 
+
+$(document).ready(function(){
+  $("button").click(function(){
+    const numInputStr = $('#enter-num').val();
+    const inputToNum = parseInt(numInputStr);
+    const robotStr = beepBoop(inputToNum)
+    $("#robot-response").text(robotStr);
+    $("form")[0].reset();
+  });
+});
+
 //                Business Logic 
 
 function beepBoop(num) {
@@ -11,10 +23,7 @@ function beepBoop(num) {
       numArray[i] = `Boop`
     }
     else if (numArray.toString().includes(1))
-      numArray[i] = 'Beep'
+      numArray[i] = `Beep`
     }
-    return numArray
+    return numArray.toString()
 }
-
-console.log(beepBoop(12));
-
