@@ -23,9 +23,9 @@ Mr. Roboger's Neighborhood is a web application that begins by taking an input, 
 
 Describe: beepBoop()
 
-Test: "It should convert the user's input into an array"
-Code: beepBoop(54);
-Expected Output: [5, 4];
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+Code: beepBoop(5);
+Expected Output: [0, 1, 2, 3, 4, 5]
 
 ## Setup/Installation Requirements
 
