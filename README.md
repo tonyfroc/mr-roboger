@@ -58,6 +58,10 @@ Code: beepBoop(13, beepBoop(23);
 Expected Output: beepBoop(13): [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
 Expected Output: beepBoop(23): [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
 
+Test: "If a number input by the user contains both the numbers `1` and `2`, all digits are replaced with "Boop".
+Code: beepBoop(12);
+Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
+
 ## Setup/Installation Requirements
 
 - Download git

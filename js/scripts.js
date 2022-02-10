@@ -16,5 +16,5 @@ function beepBoop(num) {
     return numArray
 }
 
-console.log(beepBoop(13));
-console.log(beepBoop(23));
+console.log(beepBoop(12));
+
