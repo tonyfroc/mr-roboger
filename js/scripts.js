@@ -17,3 +17,4 @@ function beepBoop(num) {
 }
 
 console.log(beepBoop(13));
+console.log(beepBoop(23));

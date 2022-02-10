@@ -53,6 +53,11 @@ Test: "If a number input by the user contains multiple instances of the number `
 Code: beepBoop(13);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
 
+Test: "If a number input by the user contains `3` and either `1` or `2`, the rule for `3` takes precedence.
+Code: beepBoop(13, beepBoop(23);
+Expected Output: beepBoop(13): [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
+Expected Output: beepBoop(23): [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
+
 ## Setup/Installation Requirements
 
 - Download git
