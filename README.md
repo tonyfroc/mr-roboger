@@ -18,6 +18,8 @@ Mr. Roboger's Neighborhood is a web application that begins by taking an input, 
 - If a number input by the user contains `1`, all digits are replaced with "Beep!"
 - If a number input by the user contains `2`, all digits are replaced with "Boop!"
 - If a number input by the user contains a `3`, all digits are replaced with "Won't you be my neighbor?"
+- If 2 appears in the same number as 1, for example `12`, the rule for `2` takes precedence. 
+- If 3 appears in the same numer as 1 or 2, for example `13` or `23`, the `3` rule will take precedence in both instances.
 
 ## Tests
 
@@ -46,6 +48,10 @@ Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8,
 Test: "If a number input by the user contains multiple instances of the number `2`, all digits are replaced with "Boop".
 Code: beepBoop(12);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
+
+Test: "If a number input by the user contains multiple instances of the number `3`, all digits are replaced with "Won't you be my neighbor?".
+Code: beepBoop(13);
+Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
 
 ## Setup/Installation Requirements
 
