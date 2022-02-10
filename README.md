@@ -31,6 +31,9 @@ Test: "If a number input by the user contains `1`, all digits are replaced with 
 Code: beepBoop(5);
 Expected Output: [0, 'Beep', 2, 3, 4, 5]
 
+Test: "If a number input by the user contains `2`, all digits are replaced with "Boop!""
+Code: beepBoop(5);
+Expected Output: [0, 'Beep', 'Boop', 3, 4, 5]
 
 
 ## Setup/Installation Requirements
