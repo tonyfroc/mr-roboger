@@ -62,17 +62,6 @@ Test: "If a number input by the user contains both the numbers `1` and `2`, all 
 Code: beepBoop(12);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
 
-
-#Describe robotUtility()
-
-Test: "Do not accept a number greater than 100"
-Code: beepBoop(101);
-Expected Output: "**System Malfunction** ERROR: Mr. Roboger can not compute numbers larger than 100";
-
-Test: "Do not accept a number less than or equal to 0"
-Code: beepBoop(-1);
-Expected Output: "**System Malfunction** ERROR: Mr. Roboger can not compute numbers larger than 100";
-
 ## Setup/Installation Requirements
 
 - Download git
