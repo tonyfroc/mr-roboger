@@ -7,17 +7,18 @@
 
 body {
   display: flex;
-  color: #FFFFFF;
+  color: #31D2F7;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to right, #000000, #e74c3c);
 }
 
 h1 {
   text-align: center;
   background-color: black;
-  color: red;
+  color: #e74c3c;
 }
 
 h4 {
@@ -34,9 +35,8 @@ input {
 }
 
 .container {
-  border: 5px solid red;
+  border: 5px solid #e74c3c;
   padding: 100px;
-  color: white;
 }
 
 .button {

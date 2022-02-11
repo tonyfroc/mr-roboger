@@ -1,12 +1,11 @@
-// User Interface Logic 
+//                User Interface Logic 
 
 $(document).ready(function(){
   $("button").click(function(event){
-    event.preventDefault();
     const numInputStr = $('#enter-num').val();
     const inputToNum = parseInt(numInputStr);
     const robotStr = beepBoop(inputToNum)
-    $("#robot-response").text(robotStr);
+    $("#robot-response").text(`Calculating. . . 🤖 💬: ${robotStr}`);
     $("form")[0].reset();
     event.preventDefault();
   });
@@ -27,7 +26,7 @@ function beepBoop(num) {
     else if (numArray.toString().includes(1))
       numArray[i] = `Beep`
     }
-    return numArray.toString()
+    return numArray.join(', ').toString()
 }
 
-// Add Logic to not accept a number higher than 100 
+// Add Logic to not accept a number higher than 100. Probabaly User Interface Logic 
