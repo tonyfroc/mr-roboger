@@ -23,7 +23,7 @@ Mr. Roboger's Neighborhood is a web application that begins by taking an input, 
 
 ## Tests
 
-Describe: beepBoop()
+#Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
 Code: beepBoop(5);
@@ -61,6 +61,14 @@ Expected Output: beepBoop(23): [0, 'Beep', 'Boop', "Won't you be my neighbor?", 
 Test: "If a number input by the user contains both the numbers `1` and `2`, all digits are replaced with "Boop".
 Code: beepBoop(12);
 Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
+
+
+#Describe robotUtility()
+
+Test: "Do not accept a number larger than 100"
+Code: beepBoop(101);
+Expected Output: ;
+
 
 ## Setup/Installation Requirements
 

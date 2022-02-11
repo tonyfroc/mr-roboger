@@ -29,4 +29,12 @@ function beepBoop(num) {
     return numArray.join(', ').toString()
 }
 
-// Add Logic to not accept a number higher than 100. Probabaly User Interface Logic 
+function robotUtility(num) {
+  if (num > 100) {
+    console.log(`**System Malfunction** ERROR: Mr. Roboger can not compute numbers larger than 100`);
+  } else {
+    return beepBoop(num)
+  }
+}
+
+console.log(robotUtility(10));
