@@ -24,6 +24,7 @@ h1 {
 h4 {
   padding: 50px;
   text-align: center;
+  color: #CCCCCC;
 }
 
 h5 {
@@ -51,9 +52,19 @@ input {
 }
 
 #enter-number {
-  text-align:center; 
+  text-align:center;
+}
+
+#enter-name {
+  margin: 10px;
+}
+
+#robot-response h5 {
+  font-family: "Cascadia Code", sans-serif;
+  color:#CCCCCC;
 }
 
 #robot-error {
   display: none; 
+  font-family: "Cascadia Code", sans-serif;
 }
