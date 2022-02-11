@@ -5,8 +5,13 @@ $(document).ready(function(){
     const numInputStr = $('#enter-num').val();
     const inputToNum = parseInt(numInputStr);
     const robotStr = beepBoop(inputToNum)
-    $("#robot-response").text(`Calculating. . . 🤖 💬: ${robotStr}`);
+    if (inputToNum > 100 || inputToNum <= 0) {
+      $("#robot-response").hide()
+      $("#robot-error").show();
+    } else {
+    $("#robot-response").text(`Calculating. . . 🤖 💬: ${robotStr}`); 
     $("form")[0].reset();
+    }
     event.preventDefault();
   });
 });
@@ -28,13 +33,3 @@ function beepBoop(num) {
     }
     return numArray.join(', ').toString()
 }
-
-function robotUtility(num) {
-  if (num > 100 || num <= 0) {
-    console.log(`**System Malfunction** ERROR: Mr. Roboger can not compute numbers larger than 100`);
-  } else {
-    return beepBoop(num)
-  }
-}
-
-console.log(robotUtility(-1));

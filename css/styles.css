@@ -50,6 +50,10 @@ input {
   padding: 10px;
 }
 
-#enter-number{
+#enter-number {
   text-align:center; 
+}
+
+#robot-error {
+  display: none; 
 }
