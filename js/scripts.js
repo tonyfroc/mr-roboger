@@ -30,11 +30,11 @@ function beepBoop(num) {
 }
 
 function robotUtility(num) {
-  if (num > 100) {
+  if (num > 100 || num <= 0) {
     console.log(`**System Malfunction** ERROR: Mr. Roboger can not compute numbers larger than 100`);
   } else {
     return beepBoop(num)
   }
 }
 
-console.log(robotUtility(10));
+console.log(robotUtility(-1));
