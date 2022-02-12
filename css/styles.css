@@ -59,7 +59,7 @@ input {
   margin: 10px;
 }
 
-#robot-response h5 {
+#robot-response {
   font-family: "Cascadia Code", sans-serif;
   color:#CCCCCC;
 }

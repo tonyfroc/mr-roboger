@@ -8,10 +8,11 @@ $(document).ready(function(){
     if (inputToNum > 100 || inputToNum <= 0) {
       $("#robot-response").hide()
       $("#robot-error").show();
-    } else {
+    } 
+    else {
       $("#robot-error").hide();
       $("#robot-response").show()
-      $("#robot-response").text(`Calculating. . . 🤖 💬: ${robotStr}`); 
+      $("#robot-response").text(`${robotStr}`); 
       $("form")[0].reset();
     }
     event.preventDefault();
