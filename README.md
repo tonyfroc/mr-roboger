@@ -26,42 +26,42 @@ Mr. Roboger's Neighborhood is a web application that begins by taking an input, 
 
 ### Describe: beepBoop()
 
-Test: "It should return an array of numbers from `0` to the user's inputted number"
-Code: beepBoop(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+- Test 1: "It should return an array of numbers from `0` to the user's inputted number"
+- Code: beepBoop(5);
+- Expected Output: [0, 1, 2, 3, 4, 5]
 
-Test: "If a number input by the user contains `1`, all digits are replaced with "Beep!""
-Code: beepBoop(5);
-Expected Output: [0, 'Beep', 2, 3, 4, 5]
+- Test 2: "If a number input by the user contains `1`, all digits are replaced with "Beep!""
+- Code: beepBoop(5);
+- Expected Output: [0, 'Beep', 2, 3, 4, 5]
 
-Test: "If a number input by the user contains `2`, all digits are replaced with "Boop!""
-Code: beepBoop(5);
+- Test 3: "If a number input by the user contains `2`, all digits are replaced with "Boop!""
+- Code: beepBoop(5);
 Expected Output: [0, 'Beep', 'Boop', 3, 4, 5]
 
-Test: "If a number input by the user contains `3`, all digits are replaced with "Won't you be my neighbor?""
-Code: beepBoop(5);
-Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5]
+- Test 4: "If a number input by the user contains `3`, all digits are replaced with "Won't you be my neighbor?""
+- Code: beepBoop(5);
+- Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5]
 
-Test: "If a number input by the user contains multiple instances of the number `1`, all digits are replaced with "Beep"".
-Code: beepBoop(10);
-Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep']
+- Test 5: "If a number input by the user contains multiple instances of the number `1`, all digits are replaced with "Beep"".
+- Code: beepBoop(10);
+- Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep']
 
-Test: "If a number input by the user contains multiple instances of the number `2`, all digits are replaced with "Boop".
-Code: beepBoop(12);
-Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
+- Test 6: "If a number input by the user contains multiple instances of the number `2`, all digits are replaced with "Boop".
+- Code: beepBoop(12);
+- Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
 
-Test: "If a number input by the user contains multiple instances of the number `3`, all digits are replaced with "Won't you be my neighbor?".
-Code: beepBoop(13);
-Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
+- Test 7: "If a number input by the user contains multiple instances of the number `3`, all digits are replaced with "Won't you be my neighbor?".
+- Code: beepBoop(13);
+- Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
 
-Test: "If a number input by the user contains both the numbers `1` and `2`, all digits are replaced with "Boop".
-Code: beepBoop(12);
-Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
+- Test 8: "If a number input by the user contains both the numbers `1` and `2`, all digits are replaced with "Boop".
+- Code: beepBoop(12);
+- Expected Output: [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop']
 
-Test: "If a number input by the user contains `3` and either `1` or `2`, the rule for `3` takes precedence over both.
-Code: beepBoop(13, beepBoop(23);
-Expected Output: beepBoop(13): [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
-Expected Output: beepBoop(23): [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
+- Test 9: "If a number input by the user contains `3` and either `1` or `2`, the rule for `3` takes precedence over both.
+- Code: beepBoop(13, beepBoop(23);
+- Expected Output: beepBoop(13): [0, 'Beep', 'Boop', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', 'Won't you be my neighbor?']
+- Expected Output: beepBoop(23): [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
 
 ## Setup/Installation Requirements
 
